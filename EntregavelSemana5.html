@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Semana 05 - Objetos, Dados e Assincronismo</title>
+    <style>
+        .status-mensagem { font-weight: bold; color: blue; margin: 10px 0; }
+        .erro-mensagem { font-weight: bold; color: red; margin: 10px 0; }
+        .historico-container { margin-top: 15px; font-size: 0.9em; color: gray; }
+        .pokemon-card { border: 1px solid #ccc; padding: 15px; margin-top: 15px; display: inline-block; }
+    </style>
+</head>
+<body>
+
+    <h1>Semana 05 - Desafios de Assincronismo e APIs</h1>
+
+    <!-- PARTE 2: BUSCADOR DE CEP -->
+    <h2>Parte 2 - Buscador de CEP</h2>
+    <form id="form-cep">
+        <input type="text" id="input-cep" placeholder="Digite o CEP (8 digitos)">
+        <button type="submit" id="btn-cep">Buscar CEP</button>
+    </form>
+    
+    <div id="status-cep" class="status-mensagem"></div>
+    <div id="resultado-cep">
+        <!-- Elementos dt e dd serao inseridos aqui dinamicamente -->
+    </div>
+    
+    <div class="historico-container">
+        <h3>Historico de CEPs Pesquisados</h3>
+        <ul id="lista-historico"></ul>
+    </div>
+
+    <br><hr><br>
+
+    <!-- PARTE 3: DESAFIO MINI POKÉDEX -->
+    <h2>Parte 3 - Desafio Mini Pokedex</h2>
+    <form id="form-pokedex">
+        <input type="text" id="input-pokemon" placeholder="Nome do Pokemon">
+        <button type="submit" id="btn-pokemon">Buscar Pokemon</button>
+    </form>
+
+    <div id="status-pokedex" class="status-mensagem"></div>
+    <div id="resultado-pokedex">
+        <!-- O card do Pokemon sera inserido aqui dinamicamente -->
+    </div>
+
+    <!-- Vinculacao com o script principal -->
+    <script src="EntregavelSemana5.js"></script>
+</body>
+</html>
