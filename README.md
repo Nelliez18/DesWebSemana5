@@ -1,3 +1,4 @@
+# Entregável de Desenvolvimento Web – (Objetos, Dados e Assincronismo) – Semana 05
 # Sistema de Integracao de Dados, Assincronismo e Consumo de APIs
 
 Este projeto consolida a aplicacao pratica de tecnicas avancadas de JavaScript moderno (ES6+), englobando a manipulacao estruturada de objetos, tratamento de fluxos assincronos com Promises e Fetch API, e gerenciamento reativo da interface com base em quatro estados controlados de tela.
