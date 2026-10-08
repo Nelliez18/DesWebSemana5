@@ -19,7 +19,7 @@ A interface web foi projetada para responder dinamicamente a quatro contextos de
 
 ---
 
-## Parte 4 - Reflexao: Analise de Performance Assincrona
+## Reflexao: Analise de Performance Assincrona
 
 **Pergunta**: Por que Promise.all pode ser mais rapido que varios await seguidos?
 
