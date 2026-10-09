@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Parte 2 - Buscador de CEP</title>
+    <style>
+        .status-mensagem { font-weight: bold; color: blue; margin: 10px 0; }
+        .erro-mensagem { font-weight: bold; color: red; margin: 10px 0; }
+        .historico-container { margin-top: 15px; font-size: 0.9em; color: gray; }
+    </style>
+</head>
+<body>
+
+    <h2>Parte 2 - Buscador de CEP</h2>
+    <form id="form-cep">
+        <input type="text" id="input-cep" placeholder="Digite o CEP (8 digitos)">
+        <button type="submit" id="btn-cep">Buscar CEP</button>
+    </form>
+    
+    <div id="status-cep" class="status-mensagem"></div>
+    <div id="resultado-cep"></div>
+    
+    <div class="historico-container">
+        <h3>Historico de CEPs Pesquisados</h3>
+        <ul id="lista-historico"></ul>
+    </div>
+
+    <script src="cep.js"></script>
+</body>
+</html>

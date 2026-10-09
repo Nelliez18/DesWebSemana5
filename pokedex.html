@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Parte 3 - Mini Pokedex</title>
+    <style>
+        .status-mensagem { font-weight: bold; color: blue; margin: 10px 0; }
+        .erro-mensagem { font-weight: bold; color: red; margin: 10px 0; }
+        .pokemon-card { border: 1px solid #ccc; padding: 15px; margin-top: 15px; display: inline-block; }
+    </style>
+</head>
+<body>
+
+    <h2>Parte 3 - Desafio Mini Pokedex</h2>
+    <form id="form-pokedex">
+        <input type="text" id="input-pokemon" placeholder="Nome do Pokemon">
+        <button type="submit" id="btn-pokemon">Buscar Pokemon</button>
+    </form>
+
+    <div id="status-pokedex" class="status-mensagem"></div>
+    <div id="resultado-pokedex"></div>
+
+    <script src="pokedex.js"></script>
+</body>
+</html>
