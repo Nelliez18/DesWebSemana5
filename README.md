@@ -29,10 +29,54 @@ Quando utilizamos multiplas instrucoes await de maneira sequencial (uma embaixo 
 
 Em contrapartida, o metodo Promise.all() recebe um array de Promises e dispara todas as requisicoes de forma paralela e simultanea para a rede. O JavaScript nao aguarda uma resposta para enviar a proxima. Ele aproveita ao maximo a largura de banda da rede e processa os dados de forma concorrente. A execucao total passa a demorar apenas o tempo da requisicao individual mais lenta da lista (aproximadamente 1 segundo no mesmo cenario), otimizando consideravelmente o tempo de processamento.
 
+# Saída da Parte 1 (Console)
 ```text
 --- PARTE 1: VALIDACAO E FILTRAGEM DE PEDIDOS ---
 Pedidos Processados com Sucesso:
 Ana - R$ 150.00
 Daniela - R$ 120.00
 Total Faturado Geral: R$ 270.00
+```
+# Saída da Parte 2: Buscador de CEP (Exibida na Tela / DOM)
+## Estado: Carregando
+```text
+Buscando...
+```
+## Estado: Sucesso (Exemplo de busca com o CEP 01001-000)
+```text
+Rua
+Praça da Sé
+Bairro
+Sé
+Cidade
+São Paulo
+UF
+SP
+```
+## Estado: Vazio / Não Encontrado
+```text
+CEP nao encontrado.
+```
+## Estado: Erro de Rede / Sem Internet
+```text
+Falha na conexao com a rede. Verifique sua internet.
+```
+# Saída da Parte 3: Mini Pokédex (Exibida na Tela / DOM)
+## Estado: Carregando
+```text
+Buscando...
+```
+## Estado: Sucesso (Exemplo de busca pelo termo "pikachu")
+```text
+PIKACHU
+[Imagem do Pikachu renderizada na tela]
+Tipo: electric
+```
+## Estado: Vazio / Não Encontrado (Erro 404)
+```text
+Pokemon nao encontrado.
+```
+## Estado: Erro de Conexão com o Servidor
+```text
+Falha na conexao com o servidor da PokeAPI.
 ```
