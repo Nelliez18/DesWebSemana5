@@ -187,3 +187,4 @@ formPokedex.addEventListener("submit", async (e) => {
         btnPokemon.disabled = false;
     }
 });
+ 
